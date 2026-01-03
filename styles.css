@@ -1,5 +1,8 @@
 .header
 {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
     background-color: bisque;
     color: aqua;
 }
@@ -11,4 +14,32 @@
 
 .container{
     margin: 0px;
+}
+*{
+    margin: 0px;
+}
+
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    margin : 5px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: blue;
+}
+
+.right{
+    float: right;
+}
+
+.box
+{
+    margin: 10px;
+    padding: 5px;
+    border: 1px,green;
+
 }
