@@ -1,0 +1,14 @@
+.header
+{
+    background-color: bisque;
+    color: aqua;
+}
+.footer
+{
+    background-color: brown;
+    color: aqua;
+}
+
+.container{
+    margin: 0px;
+}
