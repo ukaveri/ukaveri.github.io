@@ -2,23 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href = "style.css"/>
     <script src="script.js"></script>
 </head>
-<body>
+<body onload = "showLoginForm()">
     <h1> Web App1 </h1>
     <!--form with 3 options-->
-    <h3> Login Form </h3>
-    <p><label id="lblMessage1"></label></p>
-    <!-- <p><label id="lblMessage2"></label></p> -->
-    <div>
-       <p ><input type = "text" id = "txtEmail"/></p>
-       <p ><input type = "text" id = "txtPassword"/></p>
-       <p ><button class = "login-btn" onclick="dispMessage()">Log In</button></p>
-       <hr>
-       <p ><button class = "create-btn">Create Account</button></p>
-    </div>
+    <div id = "root">
 </body>
 </html>
