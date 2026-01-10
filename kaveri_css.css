@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0b0b0f, #000);
+    color: #eaeaea;
+    overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* CONTENT */
+.content {
+    animation: fadeUp 1.8s ease forwards;
+}
+
+/* GLITTER NAME */
+.glitter-text {
+    font-size: 4.5rem;
+    font-weight: 700;
+    background: linear-gradient(
+        90deg,
+        #00e5ff,
+        #9b5cff,
+        #ff4ecd,
+        #00e5ff
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s infinite linear, glow 2s infinite alternate;
+}
+
+/* SUBTITLE */
+.subtitle {
+    margin-top: 15px;
+    font-size: 1.6rem;
+    color: #9bdcff;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 1s;
+}
+
+/* TAGLINE */
+.tagline {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #cfcfcf;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 30px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 2s;
+}
+
+.btn {
+    padding: 12px 28px;
+    margin: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.4s;
+    position: relative;
+}
+
+/* PRIMARY BUTTON */
+.primary {
+    background: linear-gradient(90deg, #00e5ff, #9b5cff);
+    color: #000;
+    box-shadow: 0 0 20px #00e5ff;
+}
+
+.primary:hover {
+    box-shadow: 0 0 40px #9b5cff;
+    transform: translateY(-3px);
+}
+
+/* SECONDARY BUTTON */
+.secondary {
+    border: 1px solid #00e5ff;
+    color: #00e5ff;
+}
+
+.secondary:hover {
+    background: #00e5ff;
+    color: #000;
+    box-shadow: 0 0 25px #00e5ff;
+}
+
+/* SCROLL INDICATOR */
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    font-size: 0.9rem;
+    color: #aaa;
+    animation: bounce 2s infinite;
+}
+
+/* ANIMATIONS */
+@keyframes shimmer {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 15px #00e5ff; }
+    to { text-shadow: 0 0 35px #9b5cff; }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .glitter-text {
+        font-size: 3rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}

@@ -38,8 +38,7 @@
 
 .box
 {
-    margin: 10px;
-    padding: 5px;
-    border: 1px,green;
-
+    margin: 100px;
+    padding:100px;
+    border: 10px black solid ;
 }
