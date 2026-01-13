@@ -1,0 +1,11 @@
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box{
+    margin: 5px;
+    border: 10px,rgb(80,12,20);
+}
